@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+                         #box1{background-color: rosybrown;}
+        .red{color: red; background-color: royalblue;}
+                                                                   *{font-size: 50px;}
+        div{color: yellowgreen; background-color: saddlebrown; font-size: 20px;}
+        /* 
+         此时会发生冲突
+         发生样式冲突（优先级决定）
+         选择器的权重
+         内联样式  1000  
+         id        100  
+         类和伪类    10
+         元素选择器   1
+         比较优先级时 需要所有的优先级相加     下一级  累加不会超过上一级。
+         优先级相等 应用下边的选择器-下面覆盖上边
+         通配选择器 0
+         继承样式 没有优先级
+
+         !important 最高，一旦使用无法改变，能不用则不用。
+        */
+    </style>
+</head>
+<body>
+    <div id="box1" class="red">我是一个div</div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-size: 20px;
+            height: 1800px;
+        }
+    .box1{
+        width: 100px;
+        height: 100px;
+        background-color: aquamarine;
+        
+    }
+    /* 
+     特点和相对定位一样，唯一不一样就是
+        他的偏移量与窗口有关，永远和滑动的窗口有关
+    */
+    .box2{
+        width: 100px;
+        height: 100px;
+        background-color: bisque;
+        position: fixed;
+        left: 100px;
+        top: 100px;
+    }
+    .box3{
+        width: 100px;
+        height: 100px;
+        background-color: chartreuse;
+        position: relative;
+    }
+    </style>
+</head>
+<body>
+   <div class="box1">1</div>
+   <div class="box2">2</div>
+   <div class="box3">3</div>
+    
+  
+</body>
+</html>

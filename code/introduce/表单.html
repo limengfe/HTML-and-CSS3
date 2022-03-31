@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        autocomplete="off"关闭浏览器提示自己输入过的内容
+        readonly 表单项设置为只读，数据会提交
+        disable 禁用此表单，数据也不会提交
+        autofocus 设置为聚焦，就是获取光标。
+     -->
+    <form action="./表单接收.html">
+          文本框：<input type="text" name="username"><br>
+          密码框：<input type="password" name="password"> <br><!--添加name指定数据类型，不然服务器不知道传的是什么值-->
+          单选按钮：<input type="radio" name="xb" value="男"><!--name必要要设置成一样，value设定默认值-->
+                   <input type="radio" name="xb" value="女"><br>
+          多选框 ：<input type="checkbox" name="like" value="热巴">  <!--name值必须要相同，value设置传递的具体值-->
+                  <input type="checkbox" name="like" value="娜扎">   <!--可以使用checked选定默认框-->
+                  <input type="checkbox" name="like" value="马儿扎哈"><br>   
+          下拉列表：<select name="nation" >
+                    <option value="中国">中国</option>
+                    <option value="日本">日本</option>
+                    <option value="美国">美国</option>
+                   </select><br>           
+                 <input type="submit" value="提交">
+    </form>
+</body>
+</html>

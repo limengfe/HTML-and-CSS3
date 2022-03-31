@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+         属性选泽器
+         属性名 -选择含有指定属性的元素
+         属性名 = 属性值 -选择指定属性名和属性值的元素
+         属性名 ^= 属性值 -选择指定开头的元素
+         属性名 $= 属性值 -选择指定结尾的元素
+        属性名*= 属性值-选择含有指定值的元素
+        */
+        /* p[title]{color: rosybrown;} */
+        /* p[title=a]{color: rgb(207, 14, 104);} */
+         /* p[title^=a]{color:red}       */
+         /* p[title$=c]{color: royalblue;} */
+         p[title*=ab]{color: seagreen;}
+    </style>
+</head>
+<body>
+    <p title="a">1</p>
+    <p title="b">2</p>
+    <p title="c">3</p>
+    <p title="abc">4</p>
+    <p title="abdc">5</p>
+    <p title="dabc">6</p>
+</body>
+</html>

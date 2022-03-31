@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>img to ues</p>
+    <img id="scream" src="/Users/20183/Desktop/HTML5/img/scream.png" width="220px" height="277px" >
+    <p>Canvas:</p>
+    <canvas id="myCanvas" width="250" height="300" style="border:1px solid black">您的浏览器不支持 HTML5 canvas 标签。</canvas>
+    <script>
+        var c=document.getElementById("myCanvas");
+        var ctx=c.getContext("2d");
+        var img = document.getElementById("scream");
+        
+        img.onload = function() {
+            ctx.drawImage(img,10,10)
+        }
+    </script>
+</body>
+</html>

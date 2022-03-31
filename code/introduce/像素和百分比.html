@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+          长度单位：
+             像素
+             -由小点点构成
+             -不同屏幕大小不同
+
+             百分比
+                 -相对于其父元素的百分比
+                 可跟随父元素改变而改变
+        */
+        div.box1{
+            height: 200px;
+            width: 200px;
+            background-color: yellowgreen;
+        }
+        div.box2{
+            width: 50%;
+            height: 50%;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+</body>
+</html>

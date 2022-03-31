@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        兼容性比较差
+        当滑动到指定偏移量，会固定在此处
+        */
+       body{
+           font-size: 50px;
+           height: 1800px;
+       }
+       .box1{
+           width: 100px;
+           height: 100px;
+           background-color: chartreuse;
+       }
+       .box2{
+           width: 100px;
+           height: 100px;
+           background-color: chocolate;
+           position: sticky;
+           top: 10px;
+           left: 108px;
+       }
+       .box3{
+           width: 100px;
+           height: 100px;
+           background-color: cornflowerblue;
+       }
+    </style>
+</head>
+<body>
+ <div class="box1">1</div>
+ <div class="box2">2</div>
+ <div class="box3">3</div>
+</body>
+</html>

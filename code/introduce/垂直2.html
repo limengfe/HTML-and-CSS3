@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         /* 
+              兄弟元素的垂直外边距-会取其中的最大值
+                特殊情况下 
+                    一正一负 则取其和
+                    二哥都是负，取二者绝对值最大的
+            */
+        /* div{
+            width: 200px;
+            height: 200px;
+            font-size: 20px;
+          }
+        div.box1{
+                 background-color: aquamarine; 
+                 margin-bottom: 100px;               
+            }
+        div.box2{
+            background-color: cadetblue;
+             margin-top: 200px  ;
+            } */
+
+            /* 
+            父子元素 
+              父子元素相邻外边距，子元素的会传递给父元素
+              父元外边距的折叠会影响到页面的布局，必须要进行处理
+                如果直接移动子元素的位置，父元素也会随着移动。
+                  法1：给父元素设置padding边距 改变高度的值
+                  法2：给父元素border设置边框然后子元素外边框-border
+            */
+            .box1{
+                width: 200px;
+                height: 200px;   /*100px*/
+                background-color: chartreuse;
+                /* padding-top: 100px; */
+                border-top: 1px solid chartreuse; 
+            }
+            .box2{
+                width: 100px;
+                height: 100px;
+                background-color: darkcyan;
+                margin-top: 99px;
+                
+               
+            }
+    </style>
+</head>
+<body>
+    <!-- 
+        <div class="box1"></div>
+        <div class="box2"></div> 
+    -->
+
+      <div class="box1">
+          <div class="box2"></div>
+      </div>
+</body>
+</html>

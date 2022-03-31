@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer{ 
+            width: 800px;
+            height: 200px;
+            border: 2px solid red;
+        }
+        /* 
+        盒子套子盒子
+        子盒子必须满足
+        margin-left + border-left+ padding-left+ width + padding-right + border-right + margin-right = 父元素总宽度
+        如果不满足  7个值没有设置为auto 则浏览器会自动调整margin-right使等式成立
+                   如果某个值设置为了auto 会、调整这个值使等式成立。
+                   如果同时设置了width和其他的宽度，浏览器会使width值设置为最大。
+                   如果二个外边距都设置了auto则会平分剩余的像素，使子盒子居中
+
+        */
+        .inner{
+            width: auto; /*此时margin-right=600px*/
+            height: 200px;
+            margin-left: 300px; 
+            /* margin-left: auto; 此时margin-left =600px */
+            
+            background-color: rosybrown;
+         }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+          行内：不支持设置宽高
+               支持padding，border，margin ，不影响布局
+           但是可以将行内改成块 使用display
+                      display： inIine行内显示
+                                block 块显示  
+                                table 表格未见过
+                                none  显示为无 而且不占任何空间 
+               此外 visibility也可以 hidden 隐藏起来，但是占用空间 
+                             :visible 正常显示
+        */
+         .s1{
+             background-color: yellowgreen;
+             width: 100px;  /*无效*/
+             height: 100px; /*无效*/
+             display: block;
+             /* display: none; */
+             visibility: hidden;
+             
+             
+         }
+         .box1{
+             width: 100px;
+             height: 100px;
+             background-color: aquamarine;
+         }
+    </style>
+</head>
+<body>
+    <span class="s1">我是span1</span><br>
+    <span class="s1">我是span2</span><br>
+    <div class="box1">我是div</div>
+</body>
+</html>

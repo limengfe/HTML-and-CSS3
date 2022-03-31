@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+         浮动特点之 -脱离文档流
+                   -块元素 ：不再独占一行
+                           文字不会和浮动文档重叠  应该还记得胡歌介绍吧
+                   -行内元素：特点可以成为块元素可以设置宽高
+        
+        */
+        /* div.box1{
+            background-color: seagreen;
+            float: left;}  /* 此时box2的文字并没有与box1全部重叠*/
+         
+        
+        /* div.box2{
+            
+            background-color: springgreen;
+            float: left;}     /*此时div.box2也不再独占一行，从背景颜色可以看出开
+        */
+        
+        
+       
+         div.box3{
+             background-color: thistle;
+             
+         }
+         .s1{
+             float: left;/*行内元素，可以设置宽高*/
+             width: 200px;
+             height: 200px;
+             background-color: tomato;
+         }
+    </style>
+</head>
+<body>
+    <!-- <div class="box1">hello</div>
+    <div class="box2"><span>hello</span></div> -->
+    <div class="box3"><span class="s1">hello</span></div>
+</body>
+</html>

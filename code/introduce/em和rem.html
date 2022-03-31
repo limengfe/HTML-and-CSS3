@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        em  相对于元素字体大小来计算
+            1em=1font-size
+            em根据字体的大小改变二改变
+        rem 相对于根元素字体大小而改变 即html
+           html{  font-size}
+         
+        */
+         div.box1{
+            height: 200px;
+            width: 200px;
+            background-color: yellowgreen;
+        }
+        div.box2{
+            width: 50%;
+            height: 50%;
+            background-color: aqua;
+        }
+        /* 20*1=200px大小 */
+        div.box3{
+            font-size: 20px; 
+            width: 10em;
+            height: 10em;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+   
+    <div class="box3"></div>
+</body>
+</html>

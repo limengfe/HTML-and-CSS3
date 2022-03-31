@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      /* 
+      颜色单位：
+        在CSS中可以直接使用颜色设置，但是名字很难记好吧
+
+        RGB值
+         R red红色， G green绿色 B blue蓝色
+          每种颜色范围在0~255
+           语法：RGB（红色，绿色，蓝色）
+
+        RGBA
+          在RGB基础上加透明度
+             0完全透明，1完全不透明，.5半透明
+             
+        十六进制RGB值
+          #红色绿色蓝色
+           颜色浓度00-ff
+           如果二位重复可以缩写
+              #aabbcc=#abc  
+              
+        HSL值
+            H色相（0-360）
+            S饱和度0%-100%
+            L亮度0%-100%
+      
+      */
+      div.box1{
+          background-color: blueviolet;
+          width: 200px;
+          height: 200px;
+          background-color: rgb(255,0,0);
+          background-color: rgb(0,255,0);
+          background-color: rgb(0,0,255);
+          background-color: rgba(255,0, 0,0);
+          background-color: rgba(255,0, 0,.5);
+          background-color: rgba(255,0, 0,1);
+          background-color: #ff0000;
+          background-color: #00ff00;
+          background-color: #0000ff;
+          background-color: hsl(204, 100%, 50%);
+
+      }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+</body>
+</html>

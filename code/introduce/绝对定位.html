@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box4{
+            width: 200px;
+            height: 200px;
+            background-color: steelblue;
+        }
+        .box5{
+            width: 200px;
+            height: 200px;
+            background-color: steelblue;
+        }
+        /* .box1{
+            width: 400px;
+            height: 400px;
+            background-color: lawngreen;
+        } */
+        /* .box2{
+            width: 300px;
+            height: 300px;
+            
+            background-color: lightcyan;
+        } */
+        /* 
+         绝对定位absolute  开启后
+              1.如果不设置偏移量，元素不会发生任何变化
+              2.元素会从文档流脱离，也就是下边的元素会自动跑上去
+              3.会改变元素的性质，行内变成块，块的高度被内容撑开
+              4.使元素提高一个层级 -自己被完全显示
+              5.相当于其包含块进行定位
+                    决定定位的包含块 -离他最近的开启定位的祖先元素
+                     如果左右祖先都没有开启定位 则根元素就是他的包含块
+
+               -html（根元素，初始化包含块）      
+        */
+        .box3{
+            width: 200px;
+            height: 200px;
+            background-color: yellowgreen;
+            position: absolute;
+            
+            top: 100px;
+            left: 100px;
+        }
+        .box1{
+            width: 400px;
+            height: 400px;
+            background-color: yellow;
+            position: relative;
+        }
+        .box2{
+            width: 300px;
+            height: 300px;
+            background-color: whitesmoke;
+            position: relative;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box4">上</div>
+  <div class="box1">zu
+      <div class="box2">fu
+           <div class="box3"></div>
+      </div>
+    
+  </div>
+    
+    <div class="box5">下</div>
+
+</body>
+</html>

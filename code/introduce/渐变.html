@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        .box1{
+            width: 200px;
+            height: 200px;
+            /* 通过设置复杂的背景颜色，实现颜色过渡，渐变是图片，通过background-image实现 
+               线性渐变：颜色沿着一条线发生变化
+                     liner-gradient()
+                  liner-gradient(red,yellow) 红色在开头，黄色在结尾。中间是过渡效果
+                  而且我们可以指定渐变的方向： to left 向左 
+                                            to right 向右
+                                            to top   向上
+                                            to bottom向下  在颜色前面添加。
+                                            deg 度数也可以设置
+                                            turn  表示圈
+                    而且可以设置多种颜色liner-gradient（red,yellow,blue,green）逗号隔开
+                    也可以指定分布情况-直接在颜色后面加上像素                        
+            */
+            background-image: linear-gradient(red 50px,yellow 100px,blue 150px);
+              }
+             /* 平铺的线性渐变 -自我感觉就是可以通过像素设置,来设置重复渐变 */
+              .box2{
+                  width: 300px;
+                  height: 300px;
+                  background-image: repeating-linear-gradient(yellow 75px,blue 150px);
+              }
+              .box3{
+                  width: 200px;
+                  height: 300px;
+                  background-image: repeating-linear-gradient( to bottom,green 100px,yellow 150px);
+                  margin: -500px auto;
+                  
+              }
+
+    </style>
+</head>
+<body>
+    <div class="box1"></div><br><br>
+    <div class="box2"></div><br><br>
+    <div class="box3"></div>
+</body>
+</html>

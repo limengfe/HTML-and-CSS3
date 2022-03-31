@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* */
+        .box1{
+            width: 550px;
+            height: 550px;
+            background-color: rgb(62, 226, 71);
+            border: 15px double red;
+            background-clip:padding-box; 
+ /*background-clip设置背景范围,可选值:border-box默认值,背景出现在边框下,padding-box背景不会出现在边框,content-box背景出现在内容区*/            
+            background-origin: content-box;
+            background-image: url(../img/2.png);
+            background-repeat: no-repeat;
+            padding: 50px;
+            background-origin: content-box;
+            /* background-origin偏移量原点 padding-box从内边距开始计算，content-box从内容区开始计算，border-box从边框开始计算*/
+            background-position: 0px 0px;
+            background-size: 500px auto;
+            /* background-size 设置图片的大小，二个值，分别是-宽度,高度。如果想要图片好看，就设置一个宽度，高度默认即可 */
+            background-attachment:scroll;  /*图片是否随着元素移动 scroll默认值 跟着元素移动，fixed固定不能移动*/
+            /*以上所有值都可以通过border设置 
+              -color , -clip , -origin , -image, -repeat, -position , -size , -attachment.
+            */
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+</body>
+</html>

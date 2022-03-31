@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .box1{
+            width: 550px;
+            height: 550px;
+            /* 背景颜色 */
+            background-color: chartreuse;
+            /* 如果同时设置了背影颜色和背景图片，则背景颜色将会成为图片的背景色
+               如果图片小于背景元素，则图片会铺满背景
+               如果图片大于背景元素，则图片有一部分将无法显示
+            */
+            background-image: url("../img/2.png");
+            /* 背景重复方式  默认值：repeat沿着X，Y轴铺满， repeat-x：沿着X轴铺满
+                                   repeat-y沿着Y周铺满，no-repeat 不重复*/
+            background-repeat: no-repeat;
+            /* 关于控制图片位置的二种方式
+                1：通过方位词把背景元素分为9个部分
+                   top center bottom  left right  必须设置二个值，如果设置一个，如果设置一个，另一个默认center
+                2.通过偏移量 像素直接控制 也是需要二个值   
+             */
+             /* background-position: center center; */
+             background-position: 100px 100px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.box1{
+             /* 
+        内容区  content  大小由width，height决定  
+        */
+            width: 200px;
+            height: 200px;
+            background-color: rgb(196, 221, 231);
+              /* 
+       
+        边框 border有四个 至少设置3个属性 
+           border-color
+           border-style
+           border-size
+        */
+        border-width: 10px;
+        border-style: solid;
+        border-color: lawngreen;
+
+        /* 
+        内边距padding有四个
+
+        */
+        padding-top: 50px;
+        padding-right: 50px;
+        padding-bottom: 50px;
+        padding-left: 50px;
+
+        /* 
+        外边距margin不会改变盒子大小  会影响盒子的位置 也是上右下左四个属性
+                值可设置为负值 向正值的反方向移动   默认值为0
+        */
+        margin: 50px;
+         }
+         /* 内容区域 */
+         .inner{
+             width: 100%;
+             height: 100%;
+             background-color: rgb(66, 69, 226);
+         }
+        
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="inner"></div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border: 1px solid black;
+             margin: 0 auto;
+             width: 400px;
+             border-spacing: 2px; /*border-spacing 设置边框距离  td到table的*/
+             border-collapse: collapse; /*一旦设置，表格就只剩下单框*/
+        }
+        th{
+            border: 1px solid black;
+            width: 50px;
+            height: 40px;
+            background-color: chartreuse;
+        }
+        td{
+           width:50px ;
+           height: 50px;
+            border: 1px solid black;
+            text-align:center;
+            vertical-align:top /*设置文字在表格框里的位置，通过这个可以控制盒子的位置。盒子，display：table-cro..*/
+        }
+          tr:nth-child(odd){
+            background-color: rgb(60, 224, 128);
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+           <th>学号</th>
+           <th>姓名</th>
+           <th>性别</th>
+           <th>地址</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>孙悟空</td>
+            <td>男</td>
+            <td>花果山</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>猪八戒</td>
+            <td>男</td>
+            <td>高老庄</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>沙和尚</td>
+            <td>男</td>
+            <td>流沙河</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>唐三藏</td>
+            <td>男</td>
+            <td>女儿国</td>
+        </tr>
+    </table>
+</body>
+</html>

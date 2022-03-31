@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.box1{
+            border: 10px solid red;
+            /* 高度塌陷解决 */
+            /* 法一  父元素固定高度 ,但是这不是想要的，想要是父元素随着子元素高度变化*/
+               /* height: 100px; */
+            /* 法二:开启BFC-块级格式化上下文 三种方法  */
+            /* float: left;  1种父元素设置浮动  但是不建议,副作用大*/
+            /* display: inline-block; 2种设置为行内块  也是不建议副作用大 */
+            overflow: hidden;/*3种设置overflow 副作用最小*/
+        }
+        div.box2{
+            width: 100px;
+            height: 100px;/*如果父元素未设置高度，子元素设置了高度，子元素会撑开父元素的高度*/
+            background-color: seagreen;
+            float: left;/*如果父元素没有设置高度此时开启浮动就会出现高度塌陷*/
+        }
+        div.box3{
+            width: 100px;
+            height: 100px;
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+    <div class="box3"></div>
+</body>
+</html>

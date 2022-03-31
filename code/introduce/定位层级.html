@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <style>
+      
+        /* 
+         当元素开启定位会，元素会提升一个层级
+          当元素都开启的定位，会会优先显示后面的元素，即后边会遮盖前面优先显示
+          可以通过设置  z-index可以修改层级，数值越大，越优先显示
+               祖先元素再高都不会盖住后代。
+        */
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: darkkhaki;
+            position: absolute;
+            /* z-index: 100; */
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(58, 187, 47);
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            /* z-index: 50; */
+
+
+        }
+        .box3{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(66, 65, 51);
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            z-index: 2;
+        }
+        .box4{
+            width: 50px;
+            height: 50px;
+            background-color: darkmagenta;
+        }
+    </style>
+</head>
+<body>
+   <div class="box1">1</div>
+   <div class="box2">2</div>
+   <div class="box3">3
+       <div class="box4">4</div>
+   </div> 
+ 
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-size: 40px;
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: green;
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: greenyellow;
+            /* 想把2放到1后边并且3的位置不受影响使用方法：定位
+              定位position：有五个值 static:关闭状态
+                                    relative：相对定位
+                                    absolute:绝对定位
+                                    fixed:固定定位
+                                    sticky:粘滞定位
+              relative：1.开启后元素不会发生任何变化，
+                        2.参照元素在文档流测位置
+                        3.会提升元素的层级
+                        4.不会使元素脱离文档流
+                        5.不改变元素性质，块还是块，行内..        
+             偏移量（offset）改变相对定位的位置
+                   top：改变元素与上方的距离
+                   bottom：改变与下方的
+                   left：改变元素与文档流位置的最左侧距离            
+                   right：改变与右侧的距离
+                     一般上下用一个就可以，左右也是用一个
+            */
+            position:relative;
+            top: -200px;
+            left: 200px;
+        }
+        .box3{
+            width: 200px;
+            height: 200px;
+            background-color: lawngreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+</body>
+</html>

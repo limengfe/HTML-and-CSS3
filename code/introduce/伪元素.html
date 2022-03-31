@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        伪元素，不存在的元素。  使用：：
+         ：：first-letter 第一个字母
+         ：：first-line第一行
+         ：：selection 选中
+
+         ：：before 元素的开始
+         ：：after 元素的结尾   --必须结合content使用
+
+        */
+      p::first-letter{font-size: 20px;}
+      p.p1::first-line{color:red}
+      p.p1::selection{background-color: royalblue;}
+      div::before{
+          content: "喂";
+          color: salmon;
+      }
+     div::after{
+         content: "啊";
+         color: sandybrown;
+     }
+    </style>
+</head>
+<body>
+    <div>你们好</div>
+    <p>how are you</p>
+    <p class="p1">you are dog. you are pig. you are my son.you are dog. you are pig. you are my son.you are dog. you are pig. you are my son.
+        you are dog. you are pig. you are my son.you are dog. you are pig. you are my son.you are dog. you are pig. you are my son.
+        you are dog. you are pig. you are my son.you are dog. you are pig. you are my son.
+    </p>
+    
+</body>
+</html>

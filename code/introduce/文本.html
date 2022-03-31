@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            border: 1px solid red;
+            font-size: 50px;
+            text-align: justify; /*left 左对齐  right右对齐 center居中对齐 justify二测对齐 */
+        }
+        span{
+
+          font-size: 20px;
+          border: 1px solid blue;
+          vertical-align:top ; /* 可选值 baseline基线对齐  top顶部对齐 bottom底部对齐 middle居中对齐*/
+        }
+        p{
+            border: 1px solid red; 
+           
+        }
+        img{
+            vertical-align: top;
+        }
+        /* 下划线问题 text-decoration 可选值 none什么都没有 underline下划线 line-through删除线 overline上划线 */
+        .xian{
+            text-decoration:overline;
+        }
+        /* 关于文本溢出 overflow */
+        .box2{
+            width: 200px;
+            /* white-space:nowrap;关于文档空白 normal正常，nowrap不换行 pre保留空白 */
+            white-space: nowrap;/*右侧会一直显示*/
+            overflow: hidden;/*隐藏溢出内容*/
+            text-overflow: ellipsis;/*给溢出内容添加省略号 上面条件缺一不可。 长度固定-一直加载字体-超过的文本隐藏-再设置一个省略号*/
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        今天天气不错<span>对吧</span>
+         </div><br>
+
+         <!-- 在文字中引入图片是会出现不会对齐文本框  此时使用 vertical-align方法 只要不选中基线对齐即可解决该问题  -->
+         <p><img src="../img/haizei1.png" alt=""></p><br>
+          <i class="xian">关于线</i><br><br>
+
+     <div class="box2">There are moments in life when you miss someone so much that
+          you just want to pick them from your dreams and hug them for real! 
+          Dream what you want to dream;go where you want to go;be what you want to be,
+          because you have only one life and one chance to do all the things you want to do.</div>
+         
+</body>
+</html>

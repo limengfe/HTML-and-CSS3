@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*  
+        
+        */
+         .outer{
+             /* 如果父元素高度不设置，会被子元素高度撑开 
+                如果子元素设置超过父元素设置的高度，则会溢出，
+                    处理溢出 ：使用overflow： visible 默认值 不管你
+                                       hidden  溢出内容隐藏
+                                       scroll  滚动条查看完整内容
+                                       auto     根据需要生成。
+                                
+             */
+               height: 50px;
+               background-color: green;
+               overflow: hidden;
+         }
+
+         .inner{
+                   width: 100px;
+                   height: 100px;/*父元素没有设置高度，此时子元素会撑开父元素的高度，总高度为100px*/
+                   background-color: royalblue;
+                  
+                   }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner"></div>
+        <div class="inner"></div>
+    </div>
+</body>
+</html>

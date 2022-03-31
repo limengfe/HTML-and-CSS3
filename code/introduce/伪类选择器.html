@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        伪类：不存在的类
+        ：first-child第一个子元素
+        ：last-child最后一个子元素
+        ：nth-child(n)第n个子元素
+              -2n,even  第偶数个
+              -2n+1,odd 第奇数个
+
+        : first-of-type   
+        ：last-of-type
+        : nth-of-type  （同类中）    
+        not（）除了
+              */
+         /* ul>li:first-child{color: sienna;}   */
+         /* ul>li:last-child{color: slateblue;} */
+         /* ul>li:nth-child(2n-1){color: slategrey;} */
+         /* ul>li:first-of-type{color: springgreen;} */
+         /* ul>li:last-of-type{color: steelblue;} */
+         /* ul>li:nth-of-type(4){color: teal;} */
+         ul>li:not(:nth-of-type(3)){color: thistle;}
+</style>
+</head>
+<body>
+    <ul>
+        <span>hello</span>
+        <li>1</li>
+        <li>2</li>               
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       /* 
+       f浮动float  通过浮动可以使一个元素像其父元素左侧移动或者右侧移动
+                可选值 none 默认值，不移动。
+                      left 元素向左移。
+                      right元素向右移。
+                 注意：元素浮动后，水平布局的等式就不必成立
+                       元素浮动会脱离文档流。
+                       所以 元素下边还在文档流的元素会上移。
+            特点：1.l块元素脱离文档流，不在占据文档流位置空间 不再是块级元素
+                 2.设置浮动后像父元素的左侧或右侧移动
+                 3.浮动元素不会从父元素移除
+                 4.浮动时候不会超过上一个元素，就是不会与上一个移动元素重叠
+                 5.上一个元素没有移动，则浮动元素无法上移
+                 6.浮动元素不会超过它上边浮动的兄弟元素，最多和他一样高。          
+       */
+       div.box1{
+           width: 200px;
+           height: 200px;
+           background-color: rosybrown;
+           float: left;
+       }
+       div.box2{
+           width: 200px;
+           height: 200px;
+           background-color: royalblue;
+           float: left;
+          }
+          div.box3{
+              width: 200px;
+              height: 200px;
+              background-color: seagreen;
+              float: left;
+          }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    aa
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> /*父元素，子元素， 祖先元素，后代元素，兄弟元素 */
+      /* >子元素选择器*/
+      /*div.box>span{ color: red;}*/
+      
+      /*空格 后代选择器*/
+       /* div.box span{ color: red;} */
+
+      /*+兄弟选择器  只查找下一个 */
+      /* p+span{color: red;} */
+    
+      /* ~查找说有兄弟 */
+      p~span{color: red;}
+
+
+    </style>
+</head>
+<body>
+    <div class="box">我是div
+        <p><span>孙元素-后代选择器</span></p>
+        <span>我是子元素1</span>
+        <span>我是子元素2</span>
+        <span>我是子元素3</span>
+    </div><br>
+
+    <div>
+        <span>我是div的span</span>
+        
+    </div>
+</body>
+</html>

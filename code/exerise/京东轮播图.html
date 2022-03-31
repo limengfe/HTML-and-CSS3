@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>京东轮播图</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        .list{
+            width: 590px;
+            height: 470px;
+            margin: 100px 500px;
+            
+        }
+        .list li{
+            list-style: none;
+            position: absolute;
+        }
+        .list li:nth-child(1){
+            z-index: 3;
+        }
+        .in{
+            position: relative;
+            z-index: 99;
+            left: 30px;
+            bottom: -430px;
+        }
+         .in a{
+          width: 20px;
+          height: 20px;
+          background-color: rgb(255, 249, 240);
+          display: block;
+          float: left;
+          border-radius: 50%;
+          margin: 3px;
+         }   
+         .in a.active{
+             background-color: rgb(166, 180, 180);
+             
+         }
+    </style>
+</head>
+<body>
+    <ul class="list">
+        <li><a href="#"><img src="../img/q.jpg" ></a></li>
+        <li><a href="#"><img src="../img/q (1).jpg"></a></li>
+        <li><a href="#"><img src="../img/q (2).jpg" ></a></li>
+        <li><a href="#"><img src="../img/q (3).jpg"></a></li>
+        <li><a href="#"><img src="../img/q (4).jpg" ></a></li>
+        <li><a href="#"><img src="../img/q (5).jpg" ></a></li>
+        <li><a href="#"><img src="../img/q (6).jpg" ></a></li>
+        <div class="in">
+           <a class="active" href="#"></a>
+           <a href="#"></a>
+           <a href="#"></a>
+           <a href="#"></a>
+           <a href="#"></a>
+           <a href="#"></a>
+           <a href="#"></a>
+
+        </div>
+    </ul>
+
+</body>
+</html>
